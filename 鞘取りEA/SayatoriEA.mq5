@@ -14,15 +14,15 @@
 input group "--- ペア設定 ---"
 input string   Sym1          = "EURUSD";  // シンボル1
 input string   Sym2          = "GBPUSD";  // シンボル2
-input int      LookBack      = 100;       // Zスコア計算期間（バー数）
+input int      LookBack      = 200;       // Zスコア計算期間（バー数）
 
 input group "--- エントリー/決済条件 ---"
-input double   EntryZ        = 2.0;       // エントリーZスコア閾値
+input double   EntryZ        = 3.5;       // エントリーZスコア閾値
 input double   ExitZ         = 0.3;       // 決済Zスコア閾値（平均回帰）
-input double   StopZ         = 4.0;       // 損切りZスコア閾値（トレンド判定）
+input double   StopZ         = 5.0;       // 損切りZスコア閾値（トレンド判定）
 
 input group "--- ロット設定 ---"
-input double   LotSize       = 0.01;      // ロットサイズ
+input double   LotSize       = 0.1;       // ロットサイズ
 input int      MagicNumber   = 20240101;  // マジックナンバー
 
 input group "--- フィルター ---"
